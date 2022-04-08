@@ -1,0 +1,45 @@
+services:
+  flask:
+    build: ./flask
+    container_name: flask
+    restart: always
+    environment:
+      - APP_NAME=MyFlaskApp
+      - YOURAPPLICATION_SETTINGS=docker_config.py
+    expose:
+      - 8080
+    depends_on:
+      mysql:
+          condition: service_healthy
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: sentiment
+      MYSQL_USER: sin_chan
+      MYSQL_PASSWORD: _sinosuke_noara
+    volumes:
+      - ./db/init.sql:/data/application/init.sql
+    healthcheck:
+      test: mysql -u sin_chan -p_sinosuke_noara --database sentiment -e "show tables;"
+      interval: 3s
+      retries: 5
+      start_period: 30s
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    restart: always
+    depends_on:
+      - mysql
+      - flask
+    ports:
+      - "8081:80"
+    logging:
+      driver: awslogs
+      options:
+        awslogs-group: tutorial
+        awslogs-region: us-west-2
+        awslogs-stream-prefix: hasura

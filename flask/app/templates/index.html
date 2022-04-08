@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<form id="smileys" >
+    <div><span style="color:#999" id="news_content"> {{ news_content }} </span></div>
+    <div style="align-content: center">
+        <input type="button" name="smiley" class="sad" onclick="send_response('{{ news_id }}', '0')">
+        <input type="button" name="smiley" class="happy" onclick="send_response('{{ news_id }}', '1')">
+    </div>
+</form>
+
+<p class="mtt">
+    With <span>♥</span> from Mingafria
+</p>
+<script src="static/comm.js"></script>
+</body>
+</html>
