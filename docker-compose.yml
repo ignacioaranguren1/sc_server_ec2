@@ -36,10 +36,4 @@ services:
       - mysql
       - flask
     ports:
-      - "8081:80"
-    logging:
-      driver: awslogs
-      options:
-        awslogs-group: tutorial
-        awslogs-region: us-west-2
-        awslogs-stream-prefix: hasura
+      - "80:80"
