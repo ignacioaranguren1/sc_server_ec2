@@ -1,4 +1,4 @@
-version: "2.5"
+version: "2.2"
 services:
   flask:
     build: ./flask
@@ -28,7 +28,6 @@ services:
       test: mysql -u sin_chan -p_sinosuke_noara --database sentiment -e "show tables;"
       interval: 3s
       retries: 5
-      start_period: 30s
   nginx:
     build: ./nginx
     container_name: nginx
