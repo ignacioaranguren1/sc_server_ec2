@@ -26,7 +26,7 @@ class DbManager:
                         self.db.session.add(News(row['content']))
                 self.db.session.commit()
         except ValueError as error:
-            raise ValueError('Could not convert item {}: {}'.format(index, error))
+            raise ValueError('Could not convert item: {}'.format(error))
 
     def register_sentiment(self, query_id, sentiment):
         try:

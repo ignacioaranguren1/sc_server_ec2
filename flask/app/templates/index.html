@@ -5,13 +5,13 @@
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-<form id="smileys" >
-    <div><span style="color:#999" id="news_content"> {{ news_content }} </span></div>
-    <div style="align-content: center">
-        <input type="button" name="smiley" class="sad" onclick="send_response('{{ news_id }}', '0')">
+<div id="smileys" class="div-main" >
+    <div class="div-lev-2-content"><span class="news-text" id="news_content"> {{ news_content }} </span></div>
+    <div class="div-lev-2-button">
         <input type="button" name="smiley" class="happy" onclick="send_response('{{ news_id }}', '1')">
+        <input type="button" name="smiley" class="sad" onclick="send_response('{{ news_id }}', '0')">
     </div>
-</form>
+</div>
 
 <p class="mtt">
     With <span>♥</span> from Mingafria

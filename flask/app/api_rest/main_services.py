@@ -10,6 +10,10 @@ class NewsSchema(Schema):
     sentiment = fields.Str(required=True)
 
 
+class IdNotFoundException(Exception):
+    pass
+
+
 class MainApi(Resource):
 
     def __init__(self):
@@ -25,7 +29,11 @@ class MainApi(Resource):
         print(json_data)
         try:
             news_schema = NewsSchema().load(json_data)
+            if not self.db_manager.filter_by_id(news_schema['id']):
+                raise IdNotFoundException("No entry for {}".format(news_schema['id']))
             self.db_manager.register_sentiment(news_schema['id'], news_schema['sentiment'])
             return "NEWS ID: " + str(news_schema['id']) + " UPDATED TO SENTIMENT " + news_schema['sentiment']
+        except IdNotFoundException as err:
+            print(err)
         except ValidationError as err:
             print(err.messages)

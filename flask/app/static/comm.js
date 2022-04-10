@@ -11,7 +11,7 @@ function send_response(id_str, sentiment) {
     let id = parseInt(glob_id)
     if (typeof (id) === 'number' && id > 0 && id < 200000) {
         let req = new XMLHttpRequest();
-        req.open('POST', 'http://54.174.185.69:80/update_news', true);
+        req.open('POST', 'http://127.0.0.1:5000/update_news', true);
         req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         req.send(JSON.stringify({"id": id, "sentiment": sentiment}));
         req.onreadystatechange = function (aEvt) {
@@ -31,7 +31,7 @@ function send_response(id_str, sentiment) {
 
 function update_content(){
     let req = new XMLHttpRequest();
-        req.open('GET', 'http://54.174.185.69:80/update_news', true);
+        req.open('GET', 'http://127.0.0.1:5000/update_news', true);
         req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         req.send();
         req.onreadystatechange = function (aEvt) {

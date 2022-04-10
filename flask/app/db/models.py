@@ -5,7 +5,7 @@ db = SQLAlchemy()
 
 class News(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    content = db.Column(db.String(80))
+    content = db.Column(db.String(500))
     sentiment_news = db.relationship('SentimentNews', backref='news', lazy=True)
 
     def __init__(self, content):
@@ -18,7 +18,7 @@ class News(db.Model):
 class SentimentNews(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     sentiment = db.Column(db.String(80))
-    content = db.Column(db.String(80))
+    content = db.Column(db.String(500))
     news_id = db.Column(db.Integer, db.ForeignKey('news.id'), nullable=False)
 
     def __init__(self, sentiment, content, news_id):

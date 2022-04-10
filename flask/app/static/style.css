@@ -5,56 +5,70 @@ body {
     height: 100vh;
     justify-content: center;
     margin: 0;
-    background-color: lightcyan;
+    background-color:#203558;
 }
 
-body div {
-    font-size: 20px;
-    margin-top: 15px;
+.div-lev-2-button {
+    font-size: 170%;
     text-align: center;
-    margin-bottom: 20px;
+    height: 70%;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
-form#smileys input[type="button"] {
+.div-lev-2-content {
+    font-size: 170%;
+    text-align: center;
+    height: 30%;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+div#smileys input[type="button"] {
     -webkit-appearance: none;
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
     border: none;
     cursor: pointer;
     transition: border 0.2s ease;
-    filter: grayscale(100%);
     margin: 0 5px;
     transition: all 0.2s ease;
 }
 
-form#smileys input[type="button"]:hover {
-    filter: grayscale(0);
+div#smileys input[type="button"].happy:hover {
+    filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(80%) contrast(150%);
 }
 
-form#smileys input[type="button"]:focus {
+div#smileys input[type="button"].sad:hover {
+    filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(70%) contrast(125%);
+}
+
+div#smileys input[type="button"]:focus {
     outline: 0;
 }
 
-form#smileys input[type="button"].happy {
+div#smileys input[type="button"].happy {
     background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg') center;
     background-size: cover;
+    filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(116%) contrast(130%);
 }
 
-form#smileys input[type="button"].neutral {
+div#smileys input[type="button"].neutral {
     background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/neutral_t3q8hz.svg') center;
     background-size: cover;
 }
 
-form#smileys input[type="button"].sad {
+div#smileys input[type="button"].sad {
     background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
     background-size: cover;
+    filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(107%) contrast(125%);
 }
 
 .mtt {
     position: fixed;
     bottom: 10px;
     right: 20px;
-    color: #999;
+    color: #cccccc;
     text-decoration: none;
 }
 
@@ -68,4 +82,18 @@ form#smileys input[type="button"].sad {
 
 .mtt:hover span {
     color: #c0392b;
+}
+
+.div-main {
+    width: 70%;
+    height: auto;
+    min-width: fit-content;
+    min-height: fit-content;
+    padding: 10%;
+}
+
+.news-text {
+    color:#cccccc;
+    text-align: center;
+    margin-bottom: 10px;
 }
