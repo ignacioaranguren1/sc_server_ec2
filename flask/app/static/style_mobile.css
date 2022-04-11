@@ -1,0 +1,105 @@
+body {
+    align-items: center;
+    display: flex;
+    font-family: Helvetica, sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    background-color: #203558;
+}
+
+.div-main {
+    width: 90%;
+    height: 100%;
+}
+
+.div-lev-2-button {
+    text-align: center;
+    height: 50%;
+    width: 100%;
+}
+
+.news-text {
+    color: #cccccc;
+    text-align: center;
+    font-size: 18px;
+}
+
+.div-lev-2-content {
+    padding-top: 25%;
+    height: 15%;
+    width: 100%;
+    margin-bottom: 15%;
+    text-align: center;
+}
+
+.div-happy-button {
+    height: 80%;
+    width: 50%;
+    float: right;
+}
+
+.div-sad-button {
+    height: 80%;
+    width: 50%;
+    float: right;
+}
+
+div#smileys input[type="button"] {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 76%;
+    border: none;
+    cursor: pointer;
+    transition: border 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+div#smileys input[type="button"].happy:hover {
+    filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(80%) contrast(150%);
+}
+
+div#smileys input[type="button"].sad:hover {
+    filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(70%) contrast(125%);
+}
+
+div#smileys input[type="button"]:focus {
+    outline: 0;
+}
+
+div#smileys input[type="button"].happy {
+    background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg') center;
+    background-size: cover;
+    filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(116%) contrast(130%);
+}
+
+div#smileys input[type="button"].neutral {
+    background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/neutral_t3q8hz.svg') center;
+    background-size: cover;
+}
+
+div#smileys input[type="button"].sad {
+    background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
+    background-size: cover;
+    filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(107%) contrast(125%);
+}
+
+.mtt {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.mtt span {
+    color: #e74c3c;
+}
+
+.mtt:hover {
+    color: #666;
+}
+
+.mtt:hover span {
+    color: #c0392b;
+}
