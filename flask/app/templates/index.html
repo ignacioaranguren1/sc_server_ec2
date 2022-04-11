@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/style_mobile.css" media="screen">
 </head>
 <body>
-<div id="smileys" class="div-main" >
+<div id="smileys" class="div-main">
     <div class="div-lev-2-content"><span class="news-text" id="news_content"> {{ news_content }} </span></div>
     <div class="div-lev-2-button">
-        <input type="button" name="smiley" class="happy" onclick="send_response('{{ news_id }}', '1')">
-        <input type="button" name="smiley" class="sad" onclick="send_response('{{ news_id }}', '0')">
+        <div class="div-sad-button">
+            <input type="button" name="smiley" class="sad" onclick="send_response('{{ news_id }}', '0')">
+        </div>
+        <div class="div-happy-button">
+            <input type="button" name="smiley" class="happy" onclick="send_response('{{ news_id }}', '1')">
+        </div>
     </div>
 </div>
 
