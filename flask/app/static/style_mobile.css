@@ -124,7 +124,7 @@
 }
 
 
-@media (min-device-width: 370px) and (max-device-width: 380px){
+@media (min-device-width: 370px) and (max-device-width: 380px) {
 
     body {
         align-items: center;
@@ -157,13 +157,13 @@
         margin-top: 38%;
         height: 31%;
         width: 100%;
-        text-align: center;
+        text-align: justify;
         overflow-y: scroll;
     }
 
     .div-happy-button {
-        height: 24%;
-        width: 43%;
+        height: 420px;
+        width: 420px;
         float: right;
         position: absolute;
         top: 60%;
@@ -171,8 +171,8 @@
     }
 
     .div-sad-button {
-        height: 24%;
-        width: 43%;
+        height: 420px;
+        width: 420px;
         float: right;
         position: absolute;
         top: 60%;
@@ -248,7 +248,7 @@
     }
 }
 
-@media (min-device-width: 360px) and (max-device-width: 369px){
+@media (min-device-width: 360px) and (max-device-width: 369px) {
 
     body {
         align-items: center;
@@ -281,13 +281,13 @@
         margin-top: 38%;
         height: 31%;
         width: 100%;
-        text-align: center;
+        text-align: justify;
         overflow-y: scroll;
     }
 
     .div-happy-button {
-        height: 21%;
-        width: 43%;
+        height: 420px;
+        width: 420px;
         float: right;
         position: absolute;
         top: 60%;
@@ -295,8 +295,8 @@
     }
 
     .div-sad-button {
-        height: 21%;
-        width: 43%;
+        height: 420px;
+        width: 420px;
         float: right;
         position: absolute;
         top: 60%;
@@ -372,7 +372,7 @@
     }
 }
 
-@media (min-device-width: 381px)  and (max-device-width: 409px){
+@media (min-device-width: 381px)  and (max-device-width: 409px) {
 
     body {
         align-items: center;
@@ -406,13 +406,13 @@
         margin-top: 40%;
         height: 30%;
         width: 100%;
-        text-align: center;
+        text-align: justify;
         overflow-y: scroll;
     }
 
     .div-happy-button {
-        height: 20%;
-        width: 43%;
+        height: 420px;
+        width: 420px;
         float: right;
         position: absolute;
         top: 60%;
@@ -420,8 +420,8 @@
     }
 
     .div-sad-button {
-        height: 20%;
-        width: 43%;
+        height: 420px;
+        width: 420px;
         float: right;
         position: absolute;
         top: 60%;
@@ -492,7 +492,7 @@
     }
 }
 
-@media (min-device-width: 320px)  and (max-device-width: 359px){
+@media (min-device-width: 320px)  and (max-device-width: 359px) {
 
     body {
         align-items: center;
@@ -646,26 +646,26 @@
         margin-top: 40%;
         height: 30%;
         width: 100%;
-        text-align: center;
+        text-align: justify;
         overflow-y: scroll;
     }
 
     .div-happy-button {
-        height: 19%;
-        width: 42%;
+        height: 380px;
+        width: 380px;
         float: right;
         position: absolute;
         top: 66%;
-        right: 5%;
+        right: 8%;
     }
 
     .div-sad-button {
-        height: 19%;
-        width: 42%;
+        height: 380px;
+        width: 380px;
         float: right;
         position: absolute;
         top: 66%;
-        left: 5%;
+        left: 8%;
     }
 
 
@@ -732,7 +732,7 @@
     }
 }
 
-@media (min-device-width: 800px)  and (max-device-width: 899px){
+@media (min-device-width: 800px)  and (max-device-width: 899px) {
 
     body {
         align-items: center;
@@ -766,15 +766,15 @@
         margin-top: 40%;
         height: 25%;
         width: 100%;
-        text-align: center;
+        text-align: justify;
         overflow-y: scroll;
         padding-right: 20px;
         padding-left: 20px;
     }
 
     .div-happy-button {
-        height: 25%;
-        width: 36%;
+        height: 353px;
+        width: 353px;
         float: right;
         position: absolute;
         top: 66%;
@@ -782,8 +782,8 @@
     }
 
     .div-sad-button {
-        height: 25%;
-        width: 36%;
+        height: 353px;
+        width: 353px;
         float: right;
         position: absolute;
         top: 66%;
@@ -855,7 +855,7 @@
 }
 
 
-@media (min-device-width: 750px)  and (max-device-width: 799px){
+@media (min-device-width: 750px)  and (max-device-width: 799px) {
 
     body {
         align-items: center;
@@ -889,15 +889,15 @@
         margin-top: 40%;
         height: 25%;
         width: 100%;
-        text-align: center;
+        text-align: justify;
         overflow-y: scroll;
         padding-right: 20px;
         padding-left: 20px;
     }
 
     .div-happy-button {
-        height: 26%;
-        width: 35%;
+        height: 340px;
+        width: 340px;
         float: right;
         position: absolute;
         top: 69%;
@@ -905,8 +905,8 @@
     }
 
     .div-sad-button {
-        height: 26%;
-        width: 35%;
+        height: 340px;
+        width: 340px;
         float: right;
         position: absolute;
         top: 69%;
@@ -977,7 +977,7 @@
     }
 }
 
-@media (min-device-width: 900px)  and (max-device-width: 999px){
+@media (min-device-width: 900px)  and (max-device-width: 999px) {
 
     body {
         align-items: center;
@@ -1011,15 +1011,15 @@
         margin-top: 40%;
         height: 25%;
         width: 95%;
-        text-align: center;
+        text-align: justify;
         overflow-y: scroll;
         padding-right: 20px;
         padding-left: 20px;
     }
 
     .div-happy-button {
-        height: 26%;
-        width: 39%;
+        height: 380px;
+        width: 380px;
         float: right;
         position: absolute;
         top: 69%;
@@ -1027,8 +1027,8 @@
     }
 
     .div-sad-button {
-        height: 26%;
-        width: 39%;
+        height: 380px;
+        width: 380px;
         float: right;
         position: absolute;
         top: 69%;
@@ -1125,7 +1125,7 @@
 
     .news-text {
         color: #cccccc;
-        text-align: center;
+        text-align: justify;
         font-size: 46px;
     }
 
@@ -1138,8 +1138,8 @@
     }
 
     .div-happy-button {
-        height: 31%;
-        width: 41%;
+        height: 400px;
+        width: 400px;
         float: right;
         position: absolute;
         top: 58%;
@@ -1147,8 +1147,8 @@
     }
 
     .div-sad-button {
-        height: 31%;
-        width: 41%;
+        height: 400px;
+        width: 400px;
         float: right;
         position: absolute;
         top: 58%;
@@ -1219,7 +1219,7 @@
     }
 }
 
-@media (max-device-width: 319px){
+@media (max-device-width: 319px) {
 
     body {
         align-items: center;
@@ -1251,15 +1251,15 @@
 
     .div-lev-2-content {
         margin-top: 40%;
-        height: 30%;
+        height: 40%;
         width: 100%;
-        text-align: center;
+        text-align: justify;
         overflow-y: scroll;
     }
 
     .div-happy-button {
-        height: 18%;
-        width: 42%;
+        height: 411px;
+        width: 411px;
         float: right;
         position: absolute;
         top: 66%;
@@ -1267,8 +1267,8 @@
     }
 
     .div-sad-button {
-        height: 18%;
-        width: 42%;
+        height: 411px;
+        width: 411px;
         float: right;
         position: absolute;
         top: 66%;

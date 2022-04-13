@@ -24,28 +24,31 @@
 
     .div-lev-2-content {
         font-size: 170%;
-        text-align: center;
-        height: 30%;
-        width: 100%;
-        margin-bottom: 15px;
+        height: 8%;
+        margin-bottom: 20px;
+        width: 96%;
+        padding: 50px;
+        text-align: justify;
+        /* text-align: center; */
+        overflow-y: scroll;
     }
 
     .div-happy-button {
-        height: 43%;
-        width: 25%;
+        height: 200px;
+        width: 200px;
         float: right;
         position: absolute;
-        top: 54%;
-        right: 15%;
+        top: 62%;
+        right: 25%;
     }
 
     .div-sad-button {
-      height: 43%;
-        width: 25%;
+        height: 200px;
+        width: 200px;
         float: right;
         position: absolute;
-        top: 54%;
-        left: 15%;
+        top: 62%;
+        left: 25%;
     }
 
 
@@ -131,7 +134,7 @@
     }
 }
 
-@media (min-device-width: 1201px){
+@media (min-device-width: 1201px) {
 
     body {
         align-items: center;
@@ -151,29 +154,31 @@
     }
 
     .div-lev-2-content {
-        font-size: 170%;
+        margin-top: 8%;
+        height: 12%;
+        width: 96%;
+        padding: 2%;
+        text-align: justify;
         text-align: center;
-        height: 30%;
-        width: 100%;
-        margin-bottom: 15px;
+        overflow-y: scroll;
     }
 
     .div-happy-button {
-        height: 43%;
-        width: 27%;
+        height: 340px;
+        width: 340px;
         float: right;
         position: absolute;
-        top: 47%;
-        right: 15%;
+        top: 53%;
+        right: 20%;
     }
 
     .div-sad-button {
-        height: 43%;
-        width: 27%;
+        height: 340px;
+        width: 340px;
         float: right;
         position: absolute;
-        top: 47%;
-        left: 15%;
+        top: 53%;
+        left: 20%;
     }
 
 
@@ -248,6 +253,7 @@
         color: #cccccc;
         text-align: center;
         margin-bottom: 10px;
+        font-size: 27px
     }
 
     .ss-main {
