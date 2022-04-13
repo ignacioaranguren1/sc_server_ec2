@@ -123,8 +123,247 @@
     padding: 2px 16px;
 }
 
+@media (max-device-width: 319px) {
 
-@media (min-device-width: 370px) and (max-device-width: 380px) {
+    body {
+        align-items: center;
+        display: flex;
+        font-family: Helvetica, sans-serif;
+        height: 100vh;
+        justify-content: center;
+        margin: 0;
+        background-color: #203558;
+    }
+
+    .div-main {
+        width: 90%;
+        height: 100%;
+    }
+
+    .div-lev-2-button {
+        text-align: center;
+        height: fit-content;
+        width: 99%;
+
+    }
+
+    .news-text {
+        color: #cccccc;
+        text-align: center;
+        font-size: 46px;
+    }
+
+    .div-lev-2-content {
+        margin-top: 40%;
+        height: 40%;
+        width: 100%;
+        text-align: justify;
+        overflow-y: scroll;
+    }
+
+    .div-happy-button {
+        height: 411px;
+        width: 411px;
+        float: right;
+        position: absolute;
+        top: 66%;
+        right: 5%;
+    }
+
+    .div-sad-button {
+        height: 411px;
+        width: 411px;
+        float: right;
+        position: absolute;
+        top: 66%;
+        left: 5%;
+    }
+
+
+    div#smileys input[type="button"] {
+        -webkit-appearance: none;
+        height: 100%;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        transition: border 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    div#smileys input[type="button"].happy:hover {
+        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(80%) contrast(150%);
+    }
+
+    div#smileys input[type="button"].sad:hover {
+        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(70%) contrast(125%);
+    }
+
+    div#smileys input[type="button"]:focus {
+        outline: 0;
+    }
+
+    div#smileys input[type="button"].happy {
+        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg') center;
+        background-size: cover;
+        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(116%) contrast(130%);
+    }
+
+    div#smileys input[type="button"].sad {
+        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
+        background-size: cover;
+        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(107%) contrast(125%);
+    }
+
+    .mtt {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        color: #cccccc;
+        text-decoration: none;
+    }
+
+    .mtt span {
+        color: #e74c3c;
+    }
+
+    .mtt:hover {
+        color: #666;
+    }
+
+    .mtt:hover span {
+        color: #c0392b;
+    }
+
+    .ss-main {
+        color: #cccccc;
+        text-decoration: none;
+        font-family: "Monofett Regular";
+        font-size: 420%;
+        text-align: center;
+    }
+}
+
+@media (min-device-width: 320px)  and (max-device-width: 359px) {
+
+    body {
+        align-items: center;
+        display: flex;
+        font-family: Helvetica, sans-serif;
+        height: 100vh;
+        justify-content: center;
+        margin: 0;
+        background-color: #203558;
+    }
+
+    .div-main {
+        width: 90%;
+        height: 100%;
+    }
+
+    .div-lev-2-button {
+        text-align: center;
+        height: fit-content;
+        width: 99%;
+
+    }
+
+    .news-text {
+        color: #cccccc;
+        text-align: center;
+        font-size: 46px;
+    }
+
+    .div-lev-2-content {
+        margin-top: 40%;
+        height: 30%;
+        width: 100%;
+        text-align: center;
+        overflow-y: scroll;
+    }
+
+    .div-happy-button {
+        height: 21%;
+        width: 43%;
+        float: right;
+        position: absolute;
+        top: 66%;
+        right: 5%;
+    }
+
+    .div-sad-button {
+        height: 21%;
+        width: 43%;
+        float: right;
+        position: absolute;
+        top: 66%;
+        left: 5%;
+    }
+
+
+    div#smileys input[type="button"] {
+        -webkit-appearance: none;
+        height: 100%;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        transition: border 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    div#smileys input[type="button"].happy:hover {
+        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(80%) contrast(150%);
+    }
+
+    div#smileys input[type="button"].sad:hover {
+        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(70%) contrast(125%);
+    }
+
+    div#smileys input[type="button"]:focus {
+        outline: 0;
+    }
+
+    div#smileys input[type="button"].happy {
+        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg') center;
+        background-size: cover;
+        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(116%) contrast(130%);
+    }
+
+    div#smileys input[type="button"].sad {
+        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
+        background-size: cover;
+        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(107%) contrast(125%);
+    }
+
+    .mtt {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        color: #cccccc;
+        text-decoration: none;
+    }
+
+    .mtt span {
+        color: #e74c3c;
+    }
+
+    .mtt:hover {
+        color: #666;
+    }
+
+    .mtt:hover span {
+        color: #c0392b;
+    }
+
+    .ss-main {
+        color: #cccccc;
+        text-decoration: none;
+        font-family: "Monofett Regular";
+        font-size: 420%;
+        text-align: center;
+    }
+}
+
+@media (min-device-width: 360px) and (max-device-width: 369px) {
 
     body {
         align-items: center;
@@ -248,7 +487,7 @@
     }
 }
 
-@media (min-device-width: 360px) and (max-device-width: 369px) {
+@media (min-device-width: 370px) and (max-device-width: 380px) {
 
     body {
         align-items: center;
@@ -492,7 +731,7 @@
     }
 }
 
-@media (min-device-width: 320px)  and (max-device-width: 359px) {
+@media (min-device-width: 410px)  and (max-device-width: 520px) {
 
     body {
         align-items: center;
@@ -526,25 +765,145 @@
         margin-top: 40%;
         height: 30%;
         width: 100%;
+        text-align: justify;
+        overflow-y: scroll;
+    }
+
+    .div-happy-button {
+        height: 380px;
+        width: 380px;
+        float: right;
+        position: absolute;
+        top: 66%;
+        right: 8%;
+    }
+
+    .div-sad-button {
+        height: 380px;
+        width: 380px;
+        float: right;
+        position: absolute;
+        top: 66%;
+        left: 8%;
+    }
+
+
+    div#smileys input[type="button"] {
+        -webkit-appearance: none;
+        height: 100%;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        transition: border 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    div#smileys input[type="button"].happy:hover {
+        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(80%) contrast(150%);
+    }
+
+    div#smileys input[type="button"].sad:hover {
+        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(70%) contrast(125%);
+    }
+
+    div#smileys input[type="button"]:focus {
+        outline: 0;
+    }
+
+    div#smileys input[type="button"].happy {
+        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg') center;
+        background-size: cover;
+        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(116%) contrast(130%);
+    }
+
+    div#smileys input[type="button"].sad {
+        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
+        background-size: cover;
+        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(107%) contrast(125%);
+    }
+
+    .mtt {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        color: #cccccc;
+        text-decoration: none;
+    }
+
+    .mtt span {
+        color: #e74c3c;
+    }
+
+    .mtt:hover {
+        color: #666;
+    }
+
+    .mtt:hover span {
+        color: #c0392b;
+    }
+
+    .ss-main {
+        color: #cccccc;
+        text-decoration: none;
+        font-family: "Monofett Regular";
+        font-size: 420%;
+        text-align: center;
+    }
+}
+
+@media (min-device-width: 521px)  and (max-device-width: 749px) {
+
+    body {
+        align-items: center;
+        display: flex;
+        font-family: Helvetica, sans-serif;
+        height: 100vh;
+        justify-content: center;
+        margin: 0;
+        background-color: #203558;
+    }
+
+    .div-main {
+        width: 90%;
+        height: 100%;
+    }
+
+    .div-lev-2-button {
+        text-align: center;
+        height: fit-content;
+        width: 99%;
+
+    }
+
+    .news-text {
+        color: #cccccc;
+        text-align: justify;
+        font-size: 46px;
+    }
+
+    .div-lev-2-content {
+        margin-top: 20%;
+        height: 30%;
+        width: 100%;
         text-align: center;
         overflow-y: scroll;
     }
 
     .div-happy-button {
-        height: 21%;
-        width: 43%;
+        height: 400px;
+        width: 400px;
         float: right;
         position: absolute;
-        top: 66%;
+        top: 58%;
         right: 5%;
     }
 
     .div-sad-button {
-        height: 21%;
-        width: 43%;
+        height: 400px;
+        width: 400px;
         float: right;
         position: absolute;
-        top: 66%;
+        top: 58%;
         left: 5%;
     }
 
@@ -612,7 +971,7 @@
     }
 }
 
-@media (min-device-width: 410px)  and (max-device-width: 520px) {
+@media (min-device-width: 750px)  and (max-device-width: 799px) {
 
     body {
         align-items: center;
@@ -644,28 +1003,30 @@
 
     .div-lev-2-content {
         margin-top: 40%;
-        height: 30%;
+        height: 25%;
         width: 100%;
         text-align: justify;
         overflow-y: scroll;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .div-happy-button {
-        height: 380px;
-        width: 380px;
+        height: 340px;
+        width: 340px;
         float: right;
         position: absolute;
-        top: 66%;
-        right: 8%;
+        top: 69%;
+        right: 10%;
     }
 
     .div-sad-button {
-        height: 380px;
-        width: 380px;
+        height: 340px;
+        width: 340px;
         float: right;
         position: absolute;
-        top: 66%;
-        left: 8%;
+        top: 69%;
+        left: 10%;
     }
 
 
@@ -854,129 +1215,6 @@
     }
 }
 
-
-@media (min-device-width: 750px)  and (max-device-width: 799px) {
-
-    body {
-        align-items: center;
-        display: flex;
-        font-family: Helvetica, sans-serif;
-        height: 100vh;
-        justify-content: center;
-        margin: 0;
-        background-color: #203558;
-    }
-
-    .div-main {
-        width: 90%;
-        height: 100%;
-    }
-
-    .div-lev-2-button {
-        text-align: center;
-        height: fit-content;
-        width: 99%;
-
-    }
-
-    .news-text {
-        color: #cccccc;
-        text-align: center;
-        font-size: 46px;
-    }
-
-    .div-lev-2-content {
-        margin-top: 40%;
-        height: 25%;
-        width: 100%;
-        text-align: justify;
-        overflow-y: scroll;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
-    .div-happy-button {
-        height: 340px;
-        width: 340px;
-        float: right;
-        position: absolute;
-        top: 69%;
-        right: 10%;
-    }
-
-    .div-sad-button {
-        height: 340px;
-        width: 340px;
-        float: right;
-        position: absolute;
-        top: 69%;
-        left: 10%;
-    }
-
-
-    div#smileys input[type="button"] {
-        -webkit-appearance: none;
-        height: 100%;
-        width: 100%;
-        border: none;
-        cursor: pointer;
-        transition: border 0.2s ease;
-        transition: all 0.2s ease;
-    }
-
-    div#smileys input[type="button"].happy:hover {
-        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(80%) contrast(150%);
-    }
-
-    div#smileys input[type="button"].sad:hover {
-        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(70%) contrast(125%);
-    }
-
-    div#smileys input[type="button"]:focus {
-        outline: 0;
-    }
-
-    div#smileys input[type="button"].happy {
-        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg') center;
-        background-size: cover;
-        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(116%) contrast(130%);
-    }
-
-    div#smileys input[type="button"].sad {
-        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
-        background-size: cover;
-        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(107%) contrast(125%);
-    }
-
-    .mtt {
-        position: fixed;
-        bottom: 10px;
-        right: 20px;
-        color: #cccccc;
-        text-decoration: none;
-    }
-
-    .mtt span {
-        color: #e74c3c;
-    }
-
-    .mtt:hover {
-        color: #666;
-    }
-
-    .mtt:hover span {
-        color: #c0392b;
-    }
-
-    .ss-main {
-        color: #cccccc;
-        text-decoration: none;
-        font-family: "Monofett Regular";
-        font-size: 420%;
-        text-align: center;
-    }
-}
-
 @media (min-device-width: 900px)  and (max-device-width: 999px) {
 
     body {
@@ -1099,242 +1337,3 @@
     }
 }
 
-@media (min-device-width: 521px)  and (max-device-width: 749px) {
-
-    body {
-        align-items: center;
-        display: flex;
-        font-family: Helvetica, sans-serif;
-        height: 100vh;
-        justify-content: center;
-        margin: 0;
-        background-color: #203558;
-    }
-
-    .div-main {
-        width: 90%;
-        height: 100%;
-    }
-
-    .div-lev-2-button {
-        text-align: center;
-        height: fit-content;
-        width: 99%;
-
-    }
-
-    .news-text {
-        color: #cccccc;
-        text-align: justify;
-        font-size: 46px;
-    }
-
-    .div-lev-2-content {
-        margin-top: 20%;
-        height: 30%;
-        width: 100%;
-        text-align: center;
-        overflow-y: scroll;
-    }
-
-    .div-happy-button {
-        height: 400px;
-        width: 400px;
-        float: right;
-        position: absolute;
-        top: 58%;
-        right: 5%;
-    }
-
-    .div-sad-button {
-        height: 400px;
-        width: 400px;
-        float: right;
-        position: absolute;
-        top: 58%;
-        left: 5%;
-    }
-
-
-    div#smileys input[type="button"] {
-        -webkit-appearance: none;
-        height: 100%;
-        width: 100%;
-        border: none;
-        cursor: pointer;
-        transition: border 0.2s ease;
-        transition: all 0.2s ease;
-    }
-
-    div#smileys input[type="button"].happy:hover {
-        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(80%) contrast(150%);
-    }
-
-    div#smileys input[type="button"].sad:hover {
-        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(70%) contrast(125%);
-    }
-
-    div#smileys input[type="button"]:focus {
-        outline: 0;
-    }
-
-    div#smileys input[type="button"].happy {
-        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg') center;
-        background-size: cover;
-        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(116%) contrast(130%);
-    }
-
-    div#smileys input[type="button"].sad {
-        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
-        background-size: cover;
-        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(107%) contrast(125%);
-    }
-
-    .mtt {
-        position: fixed;
-        bottom: 10px;
-        right: 20px;
-        color: #cccccc;
-        text-decoration: none;
-    }
-
-    .mtt span {
-        color: #e74c3c;
-    }
-
-    .mtt:hover {
-        color: #666;
-    }
-
-    .mtt:hover span {
-        color: #c0392b;
-    }
-
-    .ss-main {
-        color: #cccccc;
-        text-decoration: none;
-        font-family: "Monofett Regular";
-        font-size: 420%;
-        text-align: center;
-    }
-}
-
-@media (max-device-width: 319px) {
-
-    body {
-        align-items: center;
-        display: flex;
-        font-family: Helvetica, sans-serif;
-        height: 100vh;
-        justify-content: center;
-        margin: 0;
-        background-color: #203558;
-    }
-
-    .div-main {
-        width: 90%;
-        height: 100%;
-    }
-
-    .div-lev-2-button {
-        text-align: center;
-        height: fit-content;
-        width: 99%;
-
-    }
-
-    .news-text {
-        color: #cccccc;
-        text-align: center;
-        font-size: 46px;
-    }
-
-    .div-lev-2-content {
-        margin-top: 40%;
-        height: 40%;
-        width: 100%;
-        text-align: justify;
-        overflow-y: scroll;
-    }
-
-    .div-happy-button {
-        height: 411px;
-        width: 411px;
-        float: right;
-        position: absolute;
-        top: 66%;
-        right: 5%;
-    }
-
-    .div-sad-button {
-        height: 411px;
-        width: 411px;
-        float: right;
-        position: absolute;
-        top: 66%;
-        left: 5%;
-    }
-
-
-    div#smileys input[type="button"] {
-        -webkit-appearance: none;
-        height: 100%;
-        width: 100%;
-        border: none;
-        cursor: pointer;
-        transition: border 0.2s ease;
-        transition: all 0.2s ease;
-    }
-
-    div#smileys input[type="button"].happy:hover {
-        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(80%) contrast(150%);
-    }
-
-    div#smileys input[type="button"].sad:hover {
-        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(70%) contrast(125%);
-    }
-
-    div#smileys input[type="button"]:focus {
-        outline: 0;
-    }
-
-    div#smileys input[type="button"].happy {
-        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg') center;
-        background-size: cover;
-        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(116%) contrast(130%);
-    }
-
-    div#smileys input[type="button"].sad {
-        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
-        background-size: cover;
-        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(107%) contrast(125%);
-    }
-
-    .mtt {
-        position: fixed;
-        bottom: 10px;
-        right: 20px;
-        color: #cccccc;
-        text-decoration: none;
-    }
-
-    .mtt span {
-        color: #e74c3c;
-    }
-
-    .mtt:hover {
-        color: #666;
-    }
-
-    .mtt:hover span {
-        color: #c0392b;
-    }
-
-    .ss-main {
-        color: #cccccc;
-        text-decoration: none;
-        font-family: "Monofett Regular";
-        font-size: 420%;
-        text-align: center;
-    }
-}

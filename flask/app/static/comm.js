@@ -1,4 +1,6 @@
-var glob_id = null;
+let glob_id = null;
+let myScreenOrientation = window.screen.orientation;
+myScreenOrientation.lock("portrait");
 
 window.onload = function() {
   glob_id = null;
