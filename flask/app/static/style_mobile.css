@@ -1090,7 +1090,7 @@
     }
 }
 
-@media (min-device-width: 661px)  and (max-device-width: 749px) {
+@media (min-device-width: 661px)  and (max-device-width: 739px) {
 
     body {
         align-items: center;
@@ -1209,7 +1209,7 @@
     }
 }
 
-@media (min-device-width: 750px)  and (max-device-width: 799px) {
+@media (min-device-width: 740px)  and (max-device-width: 799px) {
 
     body {
         align-items: center;
@@ -1236,11 +1236,10 @@
     .news-text {
         color: #cccccc;
         text-align: center;
-        font-size: 46px;
+        font-size: 21px;
     }
 
     .div-lev-2-content {
-        margin-top: 40%;
         height: 25%;
         width: 100%;
         text-align: justify;
@@ -1250,21 +1249,21 @@
     }
 
     .div-happy-button {
-        height: 340px;
-        width: 340px;
+        height: 180px;
+        width: 180px;
         float: right;
         position: absolute;
-        top: 69%;
-        right: 10%;
+        top: 58%;
+        right: 21%;
     }
 
     .div-sad-button {
-        height: 340px;
-        width: 340px;
+        height: 180px;
+        width: 180px;
         float: right;
         position: absolute;
-        top: 69%;
-        left: 10%;
+        top: 58%;
+        left: 21%;
     }
 
 
@@ -1326,7 +1325,7 @@
         color: #cccccc;
         text-decoration: none;
         font-family: "Monofett Regular";
-        font-size: 420%;
+        font-size: 220%;
         text-align: center;
     }
 }
@@ -1358,11 +1357,10 @@
     .news-text {
         color: #cccccc;
         text-align: center;
-        font-size: 46px;
+        font-size: 36px;
     }
 
     .div-lev-2-content {
-        margin-top: 40%;
         height: 25%;
         width: 100%;
         text-align: justify;
@@ -1376,7 +1374,7 @@
         width: 353px;
         float: right;
         position: absolute;
-        top: 66%;
+        top: 56%;
         right: 9%;
     }
 
@@ -1385,7 +1383,7 @@
         width: 353px;
         float: right;
         position: absolute;
-        top: 66%;
+        top: 56%;
         left: 9%;
     }
 
@@ -1493,21 +1491,21 @@
     }
 
     .div-happy-button {
-height: 150px;
-    width: 150px;
-    float: right;
-    position: absolute;
-    top: 62%;
-    right: 24%;
+        height: 150px;
+        width: 150px;
+        float: right;
+        position: absolute;
+        top: 62%;
+        right: 24%;
     }
 
     .div-sad-button {
-height: 150px;
-    width: 150px;
-    float: right;
-    position: absolute;
-    top: 62%;
-    left: 24%;
+        height: 150px;
+        width: 150px;
+        float: right;
+        position: absolute;
+        top: 62%;
+        left: 24%;
     }
 
 
@@ -1843,11 +1841,10 @@ height: 150px;
     .news-text {
         color: #cccccc;
         text-align: center;
-        font-size: 46px;
+        font-size: 30px;
     }
 
     .div-lev-2-content {
-        margin-top: 40%;
         height: 25%;
         width: 95%;
         text-align: justify;
@@ -1861,7 +1858,7 @@ height: 150px;
         width: 380px;
         float: right;
         position: absolute;
-        top: 69%;
+        top: 50%;
         right: 9%;
     }
 
@@ -1870,7 +1867,7 @@ height: 150px;
         width: 380px;
         float: right;
         position: absolute;
-        top: 69%;
+        top: 50%;
         left: 9%;
     }
 
@@ -1933,7 +1930,7 @@ height: 150px;
         color: #cccccc;
         text-decoration: none;
         font-family: "Monofett Regular";
-        font-size: 420%;
+        font-size: 320%;
         text-align: center;
     }
 }
