@@ -7,13 +7,26 @@
 </head>
 <body>
 <div id="smileys" class="div-main">
-    <div class="div-lev-2-content"><span class="news-text" id="news_content"> {{ news_content }} </span></div>
+    <p class="ss-main">
+        SINTRA SENTIMENT
+    </p>
+    <div class="div-lev-2-content">
+        <span class="news-text" id="news_content"> {{ news_content }} </span></div>
     <div class="div-lev-2-button">
         <div class="div-sad-button">
             <input type="button" name="smiley" class="sad" onclick="send_response('{{ news_id }}', '0')">
         </div>
         <div class="div-happy-button">
             <input type="button" name="smiley" class="happy" onclick="send_response('{{ news_id }}', '1')">
+        </div>
+    </div>
+</div>
+
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="loader">Loading...</div>
         </div>
     </div>
 </div>

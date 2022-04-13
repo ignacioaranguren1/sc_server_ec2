@@ -34,6 +34,7 @@ function update_content(){
         req.open('GET', 'http://'.concat(location.hostname).concat(":").concat(location.port).concat('/update_news'), true);
         req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         req.send();
+        open_modal()
         req.onreadystatechange = function (aEvt) {
             if (req.readyState == 4) {
                 if (req.status == 200) {
@@ -41,9 +42,30 @@ function update_content(){
                     console.log(jsonResponse)
                     document.getElementById("news_content").innerHTML = jsonResponse.content;
                     glob_id = jsonResponse['id'];
+                    close_modal()
                 } else {
                     console.error("Error loading page\n");
+                    close_modal()
                 }
             }
         };
+}
+
+let modal = document.getElementById("modal");
+
+// When the user clicks the button, open the modal
+function open_modal() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+function close_modal() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
