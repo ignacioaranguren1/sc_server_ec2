@@ -1,9 +1,9 @@
 let glob_id = null;
 let myScreenOrientation = window.screen.orientation;
-myScreenOrientation.lock("portrait");
 
 window.onload = function() {
   glob_id = null;
+  myScreenOrientation.lock("portrait");
 };
 
 function send_response(id_str, sentiment) {
