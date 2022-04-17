@@ -4,6 +4,7 @@ from .db.db_manager import DbManager
 from .db.models import db
 from flask_restful import Api
 from .api_rest.main_services import MainApi
+from .news_api.news_consumer import APIManager
 
 
 # Create instance
@@ -17,6 +18,9 @@ app.register_blueprint(classification.bp)
 # Register rest services
 api = Api(app)
 api.add_resource(MainApi, '/update_news')
+# Init news api
+api_manager = APIManager(app)
+api_manager.get_content()
 # Database linkage with app and context setting
 db.init_app(app)
 app.app_context().push()
@@ -25,3 +29,4 @@ db.create_all()
 manager = DbManager(db)
 # Load manager to env
 current_app.config["DATABASE_MANAGER"] = manager
+
