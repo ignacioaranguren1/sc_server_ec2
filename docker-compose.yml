@@ -1,8 +1,8 @@
 version: "2.2"
 services:
   flask:
-    build: ./flask
-    container_name: flask
+    build: webserver
+    container_name: webserver
     restart: always
     environment:
       - APP_NAME=MyFlaskApp

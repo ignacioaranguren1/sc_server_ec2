@@ -1,8 +1,0 @@
-Flask~=2.1.1
-uwsgi
-pymysql
-Flask-SQLAlchemy
-flask_restful
-marshmallow
-cryptography
-nltk
