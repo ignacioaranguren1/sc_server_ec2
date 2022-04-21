@@ -28,6 +28,7 @@ services:
       test: mysql -u sin_chan -p_sinosuke_noara --database sentiment -e "show tables;"
       interval: 3s
       retries: 5
+    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
   nginx:
     build: ./nginx
     container_name: nginx
