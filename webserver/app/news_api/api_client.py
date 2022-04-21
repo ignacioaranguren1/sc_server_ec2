@@ -39,7 +39,6 @@ class NewsApiClient(object):
         # Check Status of Request
         if r.status_code != requests.codes.ok:
             raise NewsAPIException(r.json())
-
         return r.json()
 
 

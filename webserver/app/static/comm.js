@@ -2,12 +2,6 @@ let glob_id = null;
 
 window.onload = function() {
   glob_id = null;
-  window.screen.orientation
-    .lock("portrait")
-    .then(
-        success => console.log(success),
-        failure => console.log(failure)
-    )
 };
 
 function send_response(id_str, sentiment) {
@@ -25,13 +19,16 @@ function send_response(id_str, sentiment) {
                 if (req.status == 200) {
                     console.log((req.response));
                     update_content();
-                } else {
+                } else if (req.status == 232){
+                    console.warn(req.response)
+                }
+                else {
                     console.error("Error loading page\n");
                 }
             }
         };
     } else {
-        console.warn("what are you trying!")
+        console.warn("Invalid id")
     }
 }
 
@@ -67,11 +64,4 @@ function open_modal() {
 // When the user clicks on <span> (x), close the modal
 function close_modal() {
   modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
 }
