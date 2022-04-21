@@ -23,7 +23,7 @@ class DbManager:
                 # Add row to DB sentence by sentence.
                 for row in news_content:
                     # If sentence's length is less than 25, skip it.
-                    if len(row) > 25 and 'asking for help .. and becoming a CEO are two different things' not in row:
+                    if len(row) > 25 and 'and becoming a CEO are two different things' not in row:
                         self.db.session.add(News(row))
                 # Commit the result
                 self.db.session.commit()
