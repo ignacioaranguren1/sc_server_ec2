@@ -13,7 +13,6 @@ app = Flask(__name__, instance_relative_config=True)
 # Load config from file
 app.config.from_object('config')
 app.config.from_envvar('YOURAPPLICATION_SETTINGS')
-print(app.config['SQLALCHEMY_DATABASE_URI'])
 # Register blueprints
 app.register_blueprint(classification.bp)
 # Register rest services

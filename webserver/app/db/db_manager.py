@@ -1,5 +1,4 @@
 from .models import News, SentimentNews
-from pymysql.err import DataError
 from .db_exceptions import IdNotFoundException, NewsNotFoundExceptions
 from ..helpers.processing_helper import string_to_dict, select_random_news
 
@@ -23,13 +22,14 @@ class DbManager:
                 # Add row to DB sentence by sentence.
                 for row in news_content:
                     # If sentence's length is less than 25, skip it.
+                    row.decode('utf-8')
                     if len(row) > 25:
                         self.db.session.add(News(row))
                 # Commit the result
                 self.db.session.commit()
         except ValueError as error:
             raise ValueError('Could not convert item: {}'.format(error))
-        except DataError as error:
+        except UnicodeDecodeError as error:
             print('There\'s been a problem with data: {}'.format(error))
 
     def register_sentiment(self, query_id, sentiment):
