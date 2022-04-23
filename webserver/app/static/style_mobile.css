@@ -147,7 +147,7 @@
     }
 
     .news-text {
-        color: #cccccc;
+        color: red;
         text-align: center;
         font-size: 46px;
     }
@@ -266,7 +266,7 @@
     }
 
     .news-text {
-        color: #cccccc;
+        color: green;
         text-align: center;
         font-size: 46px;
     }
@@ -386,7 +386,7 @@
     }
 
     .news-text {
-        color: #cccccc;
+        color: purple;
         text-align: center;
         font-size: 46px;
     }
@@ -505,7 +505,7 @@
     }
 
     .news-text {
-        color: #cccccc;
+        color: yellow;
         text-align: center;
         font-size: 46px;
     }
