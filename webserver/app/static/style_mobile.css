@@ -283,7 +283,7 @@
         width: 411px;
         float: right;
         position: absolute;
-        top: 75%;
+        top: 78%;
         right: 5%;
     }
 
@@ -292,7 +292,7 @@
         width: 411px;
         float: right;
         position: absolute;
-        top: 75%;
+        top: 78%;
         left: 5%;
     }
 
@@ -355,7 +355,7 @@
         color: #cccccc;
         text-decoration: none;
         font-family: "Monofett Regular";
-        font-size: 420%;
+        font-size: 400%;
         text-align: center;
     }
 }
