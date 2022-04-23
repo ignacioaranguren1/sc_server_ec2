@@ -160,8 +160,8 @@
     }
 
     .div-happy-button {
-        height: 411px;
-        width: 411px;
+        height: 350px;
+        width: 350px;
         float: right;
         position: absolute;
         top: 105%;
@@ -169,8 +169,8 @@
     }
 
     .div-sad-button {
-        height: 411px;
-        width: 411px;
+        height: 350px;
+        width: 350px;
         float: right;
         position: absolute;
         top: 105%;
