@@ -7,4 +7,3 @@ marshmallow
 cryptography
 nltk
 requests
-eventlet

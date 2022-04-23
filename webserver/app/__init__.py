@@ -5,9 +5,6 @@ from .db.models import db
 from flask_restful import Api
 from .api_rest.main_services import MainApi
 from .news_api.news_consumer import APIManager
-from eventlet import monkey_patch
-
-monkey_patch()
 
 
 # Create instance
