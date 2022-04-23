@@ -283,7 +283,7 @@
         width: 411px;
         float: right;
         position: absolute;
-        top: 110%;
+        top: 85%;
         right: 5%;
     }
 
@@ -292,7 +292,7 @@
         width: 411px;
         float: right;
         position: absolute;
-        top: 110%;
+        top: 85%;
         left: 5%;
     }
 
@@ -360,7 +360,7 @@
     }
 }
 
-@media only screen and (orientation: portrait) and (max-device-width: 1200px) and (max-device-height: 801x) {
+@media only screen and (orientation: portrait) and (max-device-width: 1200px) and (max-device-height: 800px) {
 
     body {
         align-items: center;
