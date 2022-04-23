@@ -122,7 +122,7 @@
     padding: 2px 16px;
 }
 
-@media only screen and (orientation: landscape) and (max-device-width: 1500px) and (max-device-height: 800px){
+@media only screen and (orientation: landscape) and (max-device-width: 1200px) and (max-device-height: 800px){
 
     body {
         align-items: center;
@@ -241,7 +241,126 @@
     }
 }
 
-@media only screen and (orientation: portrait) and (max-device-width: 1500px) and (min-device-height: 801px) {
+@media only screen and (orientation: landscape) and (max-device-width: 1200px) and (min-device-height: 801px){
+
+    body {
+        align-items: center;
+        display: flex;
+        font-family: Helvetica, sans-serif;
+        height: 100vh;
+        justify-content: center;
+        margin: 0;
+        background-color: #0D1A30;
+    }
+
+    .div-main {
+        width: 90%;
+        height: 100%;
+    }
+
+    .div-lev-2-button {
+        text-align: center;
+        height: fit-content;
+        width: 99%;
+
+    }
+
+    .news-text {
+        color: yellow;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .div-lev-2-content {
+        height: 40%;
+        width: 100%;
+        text-align: justify;
+        overflow-y: scroll;
+    }
+
+    .div-happy-button {
+        height: 411px;
+        width: 411px;
+        float: right;
+        position: absolute;
+        top: 110%;
+        right: 5%;
+    }
+
+    .div-sad-button {
+        height: 411px;
+        width: 411px;
+        float: right;
+        position: absolute;
+        top: 110%;
+        left: 5%;
+    }
+
+
+    div#smileys input[type="button"] {
+        -webkit-appearance: none;
+        height: 100%;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        transition: border 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    div#smileys input[type="button"].happy:hover {
+        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(80%) contrast(150%);
+    }
+
+    div#smileys input[type="button"].sad:hover {
+        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(70%) contrast(125%);
+    }
+
+    div#smileys input[type="button"]:focus {
+        outline: 0;
+    }
+
+    div#smileys input[type="button"].happy {
+        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg') center;
+        background-size: cover;
+        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(116%) contrast(130%);
+    }
+
+    div#smileys input[type="button"].sad {
+        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
+        background-size: cover;
+        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(107%) contrast(125%);
+    }
+
+    .mtt {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        color: #cccccc;
+        text-decoration: none;
+    }
+
+    .mtt span {
+        color: #e74c3c;
+    }
+
+    .mtt:hover {
+        color: #666;
+    }
+
+    .mtt:hover span {
+        color: #c0392b;
+    }
+
+    .ss-main {
+        color: #cccccc;
+        text-decoration: none;
+        font-family: "Monofett Regular";
+        font-size: 420%;
+        text-align: center;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-device-width: 1200px) and (max-device-height: 801x) {
 
     body {
         align-items: center;
@@ -267,6 +386,126 @@
 
     .news-text {
         color: green;
+        text-align: center;
+        font-size: 46px;
+    }
+
+    .div-lev-2-content {
+        margin-top: 30%;
+        height: 30%;
+        width: 100%;
+        text-align: justify;
+        overflow-y: scroll;
+    }
+
+    .div-happy-button {
+        height: 411px;
+        width: 411px;
+        float: right;
+        position: absolute;
+        top: 66%;
+        right: 5%;
+    }
+
+    .div-sad-button {
+        height: 411px;
+        width: 411px;
+        float: right;
+        position: absolute;
+        top: 66%;
+        left: 5%;
+    }
+
+
+    div#smileys input[type="button"] {
+        -webkit-appearance: none;
+        height: 100%;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        transition: border 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    div#smileys input[type="button"].happy:hover {
+        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(80%) contrast(150%);
+    }
+
+    div#smileys input[type="button"].sad:hover {
+        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(70%) contrast(125%);
+    }
+
+    div#smileys input[type="button"]:focus {
+        outline: 0;
+    }
+
+    div#smileys input[type="button"].happy {
+        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg') center;
+        background-size: cover;
+        filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(116%) contrast(130%);
+    }
+
+    div#smileys input[type="button"].sad {
+        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
+        background-size: cover;
+        filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(107%) contrast(125%);
+    }
+
+    .mtt {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        color: #cccccc;
+        text-decoration: none;
+    }
+
+    .mtt span {
+        color: #e74c3c;
+    }
+
+    .mtt:hover {
+        color: #666;
+    }
+
+    .mtt:hover span {
+        color: #c0392b;
+    }
+
+    .ss-main {
+        color: #cccccc;
+        text-decoration: none;
+        font-family: "Monofett Regular";
+        font-size: 420%;
+        text-align: center;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-device-width: 1200px) and (min-device-height: 801px) {
+
+    body {
+        align-items: center;
+        display: flex;
+        font-family: Helvetica, sans-serif;
+        height: 100vh;
+        justify-content: center;
+        margin: 0;
+        background-color: #0D1A30;
+    }
+
+    .div-main {
+        width: 90%;
+        height: 100%;
+    }
+
+    .div-lev-2-button {
+        text-align: center;
+        height: fit-content;
+        width: 99%;
+
+    }
+
+    .news-text {
+        color: purple;
         text-align: center;
         font-size: 46px;
     }
