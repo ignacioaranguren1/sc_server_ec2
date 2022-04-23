@@ -5,6 +5,9 @@ from .db.models import db
 from flask_restful import Api
 from .api_rest.main_services import MainApi
 from .news_api.news_consumer import APIManager
+from eventlet import monkey_patch
+
+monkey_patch()
 
 
 # Create instance
@@ -13,7 +16,6 @@ app = Flask(__name__, instance_relative_config=True)
 # Load config from file
 app.config.from_object('config')
 app.config.from_envvar('YOURAPPLICATION_SETTINGS')
-print(app.config['SQLALCHEMY_DATABASE_URI'])
 # Register blueprints
 app.register_blueprint(classification.bp)
 # Register rest services
