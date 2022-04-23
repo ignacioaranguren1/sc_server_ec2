@@ -21,9 +21,9 @@ class DbManager:
             # Check if DB empty. It is assumed that if DB is not empty, DB has been previously initialized.
             if not self.query_all():
                 # Add row to DB sentence by sentence.
-                for row in news_content:
+                for index, row in enumerate(news_content):
                     # If sentence's length is less than 25, skip it.
-                    if len(row) > 25:
+                    if len(row) > 25 and index < 500:
                         self.db.session.add(News(row))
                 # Commit the result
                 self.db.session.commit()
