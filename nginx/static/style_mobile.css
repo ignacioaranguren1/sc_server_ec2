@@ -387,7 +387,7 @@
     .news-text {
         color: #cccccc;
         text-align: center;
-        font-size: 46px;
+        font-size: 56px;
     }
 
     .div-lev-2-content {
@@ -507,11 +507,11 @@
     .news-text {
         color: #cccccc;
         text-align: center;
-        font-size: 36px;
+        font-size: 56px;
     }
 
     .div-lev-2-content {
-        margin-top: 30%;
+        margin-top: 20%;
         height: 30%;
         width: 100%;
         text-align: justify;
@@ -595,7 +595,7 @@
         color: #cccccc;
         text-decoration: none;
         font-family: "Monofett Regular";
-        font-size: 420%;
+        font-size: 460%;
         text-align: center;
     }
 }
