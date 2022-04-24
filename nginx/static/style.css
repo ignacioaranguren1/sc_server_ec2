@@ -74,18 +74,13 @@
     }
 
     div#smileys input[type="button"].happy {
-        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg') center;
+        background: url('images/happy.svg') center;
         background-size: cover;
         filter: brightness(0) saturate(100%) invert(72%) sepia(81%) saturate(5003%) hue-rotate(87deg) brightness(116%) contrast(130%);
     }
 
-    div#smileys input[type="button"].neutral {
-        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/neutral_t3q8hz.svg') center;
-        background-size: cover;
-    }
-
     div#smileys input[type="button"].sad {
-        background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
+        background: url('images/sad.svg') center;
         background-size: cover;
         filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(6048%) hue-rotate(358deg) brightness(107%) contrast(125%);
     }
