@@ -7,4 +7,6 @@ FROM nginx:latest
 RUN rm /etc/nginx/conf.d/default.conf
 # We copy the requirements file in order to install
 # Python dependencies
+WORKDIR /static
+COPY ../webserver/app/static .
 COPY default.conf /etc/nginx/conf.d/
