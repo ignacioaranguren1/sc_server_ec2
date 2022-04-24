@@ -477,6 +477,9 @@
         font-family: "Monofett Regular";
         font-size: 460%;
         text-align: center;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        padding-top: 1em;
     }
 }
 
@@ -597,6 +600,9 @@
         font-family: "Monofett Regular";
         font-size: 420%;
         text-align: center;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        padding-top: 1em;
     }
 }
 
