@@ -153,7 +153,7 @@
     }
 
     .div-lev-2-content {
-        height: 30%;
+        height: 35%;
         width: 100%;
         text-align: justify;
         overflow-y: scroll;
@@ -164,7 +164,7 @@
         width: 150px;
         float: right;
         position: fixed;
-        top: 60%;
+        top: 59%;
         right: 20%;
     }
 
@@ -173,7 +173,7 @@
         width: 150px;
         float: right;
         position: fixed;
-        top: 60%;
+        top: 59%;
         left: 20%;
     }
 
