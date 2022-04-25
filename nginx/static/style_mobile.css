@@ -276,28 +276,28 @@
     }
 
     .div-lev-2-content {
-        height: 40%;
+        height: 23%;
         width: 100%;
         text-align: justify;
         overflow-y: scroll;
     }
 
     .div-happy-button {
-        height: 411px;
-        width: 411px;
+        height: 311px;
+        width: 311px;
         float: right;
         position: fixed;
-        top: 75%;
-        right: 5%;
+        top: 51%;
+        right: 8%;
     }
 
     .div-sad-button {
-        height: 411px;
-        width: 411px;
+        height: 311px;
+        width: 311px;
         float: right;
         position: fixed;
-        top: 75%;
-        left: 5%;
+        top: 51%;
+        left: 8%;
     }
 
 
