@@ -127,6 +127,7 @@
     body {
         align-items: center;
         display: flex;
+        height: 86vh;
         font-family: Helvetica, sans-serif;
         justify-content: center;
         margin: 0;
@@ -249,6 +250,7 @@
     body {
         align-items: center;
         display: flex;
+        height: 86vh;
         font-family: Helvetica, sans-serif;
         justify-content: center;
         margin: 0;
@@ -367,6 +369,7 @@
     body {
         align-items: center;
         display: flex;
+        height: 86vh;
         font-family: Helvetica, sans-serif;
         justify-content: center;
         margin: 0;
@@ -489,6 +492,7 @@
     body {
         align-items: center;
         display: flex;
+        height: 86vh;
         font-family: Helvetica, sans-serif;
         justify-content: center;
         margin: 0;
