@@ -1,32 +1,56 @@
-from flask import Flask, current_app
-from .blueprints import classification
-from .db.db_manager import DbManager
-from .db.models import db
-from flask_restful import Api
-from .api_rest.main_services import MainApi
-from .news_api.news_consumer import APIManager
+__author__ = "Ignacio Aranguren"
+__credits__ = ["Ignacio Aranguren"]
+__version__ = "0.1.0"
+__maintainer__ = "Ignacio Aranguren"
+__email__ = "ignacio.aranguren98@gmail.com"
 
 
-# Create instance
-app = Flask(__name__)
-app = Flask(__name__, instance_relative_config=True)
-# Load config from file
-app.config.from_object('config')
-app.config.from_envvar('YOURAPPLICATION_SETTINGS')
-# Register blueprints
-app.register_blueprint(classification.bp)
-# Register rest services
-api = Api(app)
-api.add_resource(MainApi, '/update_news')
-# Database linkage with app and context setting
-db.init_app(app)
-app.app_context().push()
-db.create_all()
-# Create database manager
-db_manager = DbManager(db)
-# Init news api
-api_manager = APIManager(app, db_manager)
-api_manager.get_content()
-# Load manager to env
-current_app.config["DATABASE_MANAGER"] = db_manager
+
+
+def create_app(name=__name__, enabled_modules="all"):
+
+    if enabled_modules == "all":
+        enabled_modules = {
+            "db_manager",
+            "news_api",
+            "rest_api",
+            "app_database",
+            "news_blueprint"
+        }
+
+    # Create instance
+    from flask import Flask, current_app
+    app = Flask(name, instance_relative_config=True)
+
+    # Load config from file
+    # app.config.from_object('../config')
+    app.config.from_envvar('YOURAPPLICATION_SETTINGS')
+
+
+    with app.app_context():
+        # Init the database and db_manager modules
+        if "app_database" in enabled_modules:
+            from .db import db
+            # Database linkage with app and context setting
+            db.init_app(app)
+            from .db import db_manager
+
+        if "news_api" in enabled_modules:
+            from .news_api.news_consumer import APIManager
+            # Init news api
+            news_manager = APIManager(app)
+            news_manager.get_content()
+
+        if "rest_api" in enabled_modules:
+            from flask_restful import Api
+            from .api_rest.main_services import MainApi
+            # Register rest services
+            api = Api(app)
+            api.add_resource(MainApi, '/update_news')
+
+    if "news_blueprint" in enabled_modules:
+        from .blueprints import classification
+        # Register blueprints
+        app.register_blueprint(classification.bp)
+    return app
 

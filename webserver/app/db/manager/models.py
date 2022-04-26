@@ -1,6 +1,5 @@
-from flask_sqlalchemy import SQLAlchemy
+from ..definitions import db_conn as db
 
-db = SQLAlchemy()
 
 class News(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
