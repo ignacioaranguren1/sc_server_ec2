@@ -242,6 +242,16 @@
         margin-block-end: 0em;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
+        -webkit-transition: text-shadow 3s linear;
+        -moz-transition: text-shadow 3s linear;
+        -ms-transition: text-shadow 3s linear;
+        -o-transition: text-shadow 3s linear;
+        transition: text-shadow 3s linear;
+    }
+
+    .ss-main:hover,
+    .ss-main.glow {
+    text-shadow: 0 0 15px #c400f1;
     }
 }
 
@@ -361,7 +371,18 @@
         font-family: "Monofett Regular";
         font-size: 420%;
         text-align: center;
+        -webkit-transition: text-shadow 3s linear;
+        -moz-transition: text-shadow 3s linear;
+        -ms-transition: text-shadow 3s linear;
+        -o-transition: text-shadow 3s linear;
+        transition: text-shadow 3s linear;
     }
+
+    .ss-main:hover,
+    .ss-main.glow {
+    text-shadow: 0 0 15px #c400f1;
+    }
+
 }
 
 @media only screen and (orientation: portrait) and (max-device-width: 1200px) and (max-device-height: 950px) {
@@ -484,6 +505,16 @@
         margin-block-start: 0em;
         margin-block-end: 0em;
         padding-top: 1em;
+        -webkit-transition: text-shadow 3s linear;
+        -moz-transition: text-shadow 3s linear;
+        -ms-transition: text-shadow 3s linear;
+        -o-transition: text-shadow 3s linear;
+        transition: text-shadow 3s linear;
+    }
+
+    .ss-main:hover,
+    .ss-main.glow {
+    text-shadow: 0 0 15px #c400f1;
     }
 }
 
@@ -607,6 +638,16 @@
         margin-block-start: 0em;
         margin-block-end: 0em;
         padding-top: 1em;
+        -webkit-transition: text-shadow 3s linear;
+        -moz-transition: text-shadow 3s linear;
+        -ms-transition: text-shadow 3s linear;
+        -o-transition: text-shadow 3s linear;
+        transition: text-shadow 3s linear;
+    }
+
+    .ss-main:hover,
+    .ss-main.glow {
+    text-shadow: 0 0 15px #c400f1;
     }
 }
 
