@@ -7,7 +7,7 @@ window.onload = function() {
 let glow = $('.ss-main');
 setInterval(function(){
     glow.hasClass('glow') ? glow.removeClass('glow') : glow.addClass('glow');
-}, 3000);
+}, 5000);
 
 function send_response(id_str, sentiment) {
     if (glob_id == null) {

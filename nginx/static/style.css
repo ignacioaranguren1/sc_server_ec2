@@ -125,15 +125,15 @@
         text-decoration: none;
         font-family: "Monofett Regular";
         text-align: center;
-        -webkit-transition: text-shadow 3s linear;
-        -moz-transition: text-shadow 3s linear;
-        -ms-transition: text-shadow 3s linear;
-        -o-transition: text-shadow 3s linear;
-        transition: text-shadow 3s linear;
+        -webkit-transition: text-shadow 5s linear;
+        -moz-transition: text-shadow 5s linear;
+        -ms-transition: text-shadow 5s linear;
+        -o-transition: text-shadow 5s linear;
+        transition: text-shadow 5s linear;
     }
 
     .ss-main:hover,
     .ss-main.glow {
-    text-shadow: 0 0 15px #c400f1;
+    text-shadow: 0 0 25px #c400f1;
     }
 }
