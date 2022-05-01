@@ -293,8 +293,8 @@
     }
 
     .div-happy-button {
-        height: 311px;
-        width: 311px;
+        height: 280px;
+        width: 280px;
         float: right;
         position: fixed;
         top: 51%;
@@ -302,8 +302,8 @@
     }
 
     .div-sad-button {
-        height: 311px;
-        width: 311px;
+        height: 280px;
+        width: 280px;
         float: right;
         position: fixed;
         top: 51%;
@@ -347,7 +347,7 @@
 
     .mtt {
         position: fixed;
-        bottom: 10px;
+        top: 10px;
         right: 20px;
         color: #cccccc;
         text-decoration: none;
@@ -369,7 +369,7 @@
         color: #cccccc;
         text-decoration: none;
         font-family: "Monofett Regular";
-        font-size: 420%;
+        font-size: 400%;
         text-align: center;
         -webkit-transition: text-shadow 3s linear;
         -moz-transition: text-shadow 3s linear;
