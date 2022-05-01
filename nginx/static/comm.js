@@ -14,7 +14,7 @@ function send_response(id_str, sentiment) {
         glob_id = id_str
     }
     let id = parseInt(glob_id)
-    if (typeof (id) === 'number' && id > 0 && id < 200000) {
+    if (typeof (id) === 'number' && id > 0 && id < 200000 && (sentiment == 0 | sentiment == 1 | sentiment == 2)) {
         let req = new XMLHttpRequest();
         req.open('POST', 'https://'.concat(location.hostname).concat(":").concat(location.port).concat('/update_news'), true);
         req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -33,7 +33,7 @@ function send_response(id_str, sentiment) {
             }
         };
     } else {
-        console.warn("Invalid id")
+        console.warn("Invalid input data for ID: ".concat(id_str).concat(" SENTIMENT: ").concat(sentiment))
     }
 }
 
