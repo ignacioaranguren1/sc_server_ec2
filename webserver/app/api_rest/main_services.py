@@ -40,4 +40,4 @@ class MainApi(Resource):
             else:
                 return "REQUESTED ID: {} NEWS NOT FOUND IN DATABASE".format(str(news_schema['id'])), 232
         except ValidationError as err:
-            return err.messages, 501
+            return err.messages, 232

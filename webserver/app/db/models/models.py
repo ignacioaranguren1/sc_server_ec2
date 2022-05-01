@@ -15,7 +15,7 @@ class News(db.Model):
 
 class SentimentNews(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    sentiment = db.Column(db.String(80))
+    sentiment = db.Column(db.Integer)
     content = db.Column(db.String(1000))
     news_id = db.Column(db.Integer, db.ForeignKey('news.id'), nullable=False)
 
