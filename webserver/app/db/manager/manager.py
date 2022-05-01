@@ -1,4 +1,4 @@
-from .models import News, SentimentNews
+from ..models.models import News, SentimentNews
 from pymysql.err import DataError
 from .exceptions import IdNotFoundException, NewsNotFoundExceptions, DBInternalError
 from ...helpers.processing_helper import string_to_dict, select_random_news

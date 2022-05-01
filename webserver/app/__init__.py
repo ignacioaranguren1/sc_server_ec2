@@ -24,10 +24,9 @@ app.config.from_envvar('YOURAPPLICATION_SETTINGS')
 with app.app_context():
     # Init the database and db_manager modules
     if "app_database" in enabled_modules:
-        from .db import db
-
+        from .db import init_app
         # Database linkage with app and context setting
-        db.init_app(app)
+        init_app(app)
         from .db import db_manager
 
     if "news_api" in enabled_modules:

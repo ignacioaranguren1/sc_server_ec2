@@ -27,4 +27,3 @@ class SentimentNews(db.Model):
     def __repr__(self):
         return "{'id': %r" % str(self.id) + ",'sentiment': %r" % self.sentiment + ",'content': %r" % self.content + "}"
 
-

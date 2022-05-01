@@ -15,7 +15,7 @@ class APIManager:
         if not db_manager.query_all():
             # get content from news API
             news_api = NewsApiClient(url="https://api.goperigon.com/v1/all",
-                                     token="089af873-e459-4dc3-a38c-7a2d027bc362")
+                                     token="0e97de0f-d215-403e-8e89-16351deaa204")
             processed_response = process_content(news_api.get_everything()['articles'])['c']
             db_manager.create_from_api(processed_response)
 
